@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Regional Transport Office </title>
+    <style type="text/css">
+        .style1 {
+        height:30px;
+        padding:7px;
+        cursor:no-drop;
+        cursor:pointer;
+        color:#2a63be;
+        background-color:#eee;
+        }
+        .style2 {
+        display:block;
+        text-decoration:none;
+        color:#2a63be;
+        font-family:'Segoe UI';
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 100%">
+            <tr>
+                <td style="width: 100%; height: 150px; background-color:#2a63be; font-family:Broadway; font-size:48px; color:#afd1ea" colspan="2">
+                    <%--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+                        width="990" height="150">
+                        <param name="movie" value="flash1.swf" />
+                        <param name="quality" value="high" />
+                        <param name="wmode" value="transparent"/>
+                        <embed src="flash1.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent"
+                            width="990" height="150" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+                    </object>--%>
+                    <center>REGIONAL  TRANSPORT  OFFICE</center>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 30px" >
+                    &nbsp;
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                </td>
+                <td style="height: 50px;color:crimson;font:900 20px ,Broadway" >
+                    Welcome ADMIN !!!
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px; height: 400px;vertical-align:top">
+                    
+                    <table style="width:200px;color:#2a63be">
+                        <tr><td class="style1"><a class="style2" href="ListAdminMaster.aspx" >Admin Info</a></td></tr>
+                        <tr><td class="style1"><a class="style2" href="Entryadmin.aspx" >Add New Admin</a></td></tr>        
+                        <tr><td class="style1"><a class="style2" href="ListRTO.aspx" >RTO Test</a></td></tr>
+                        <tr><td class="style1"><a class="style2" href="ListContactUs.aspx" >Contact Us</a></td></tr>
+                        <tr><td class="style1"><a class="style2" href="ListFeedback.aspx" >Feedback</a></td></tr>
+                        <tr><td class="style1"><a class="style2" href="DesignofLicense.aspx" >Design</a></td></tr>
+                        <tr><td class="style1"><a class="style2" href="ListReg.aspx" >View Registered Users</a></td></tr>
+                        <tr><td class="style1"><a class="style2" href="ListDownload.aspx" >Download List Form</a></td></tr>
+                        
+                        <%--<tr><td class="style1"><a class="style2" href="ListOfForms.aspx" >Send Forms</a></td></tr>--%>
+                        <%--<tr><td class="style1"><a class="style2" href="form20crystalreport.aspx" >View Forms</a></td></tr>--%>
+                        
+                        <%--<tr><td class="style1"><a class="style2" href="mailoflicense.aspx" >Mail</a></td></tr>--%>
+                            
+                        
+                    </table>
+                    <%--<ul>
+                        <li><a href="listadminmaster.aspx">Admin Info</a></li>
+                        <li><a href="listreg.aspx">Registration</a></li>
+                        <li><a href="listrto.aspx">RTO Test</a></li>
+                        <li><a href="listcontactus.aspx">Contact_Us Info</a></li>
+                        <li><a href="listfeedback.aspx">Feedback</a></li>
+                        <li><a href="listdownload.aspx">Download Form</a></li>
+                      <%--  <li><a href="listreg.aspx">View Registered Users</a></li>--%>
+                        <%--<li><a href="list_of_forms.aspx">Send Forms</a></li>
+                        <li><a href="form20crystalreport.aspx">View Forms</a></li>--%>
+                       <%-- <li><a href="design of license.aspx">Design </a></li>
+                        <li><a href="mailoflicense.aspx">Mail</a></li>--%>
+                    <%--</ul>--%>
+                </td>
+                <td style="width: 100%; height: 400px" valign="top">
+                <div style="width:100%; overflow:scroll;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                   
+                    </asp:ContentPlaceHolder>
+                    
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%; height: 60px; color:#2a63be;font-family:'Segoe UI'" colspan="2" align="center">
+                <center>
+                <b>
+                    <asp:HyperLink ID="Logout" runat="server" NavigateUrl="~/Default.aspx" style="text-decoration:none;cursor:no-drop;cursor:pointer;color:#2a63be" >Logout</asp:HyperLink></b><br />
+                    Developed By: Kanwarbir Singh<br />
+                    © 2014                
+                </center>
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
